@@ -1,0 +1,76 @@
+@adminCookie = MahaanExpress=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZThhZjZhNTc0YjQ1ZTdkMjQ3Y2U0N2EiLCJ1c2VyVHlwZSI6ImFkbWluIiwiaWF0IjoxNTg2ODAzMDEzLCJleHAiOjE1ODkzOTUwMTN9.W1X3Fu_5CJ96laikaVrRVjHxesW0gi1m9V7ajTScoks
+@userCookie = MahaanExpress=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTkyYzZlM2RkODNmYTA1NzQ3Y2Q4ZTQiLCJ1c2VybmFtZSI6Im9ta2Fyc3RoYSIsInVzZXJUeXBlIjoidXNlciIsImlhdCI6MTU4NjkwMTM1NiwiZXhwIjoxNTg5NDkzMzU2fQ.piP7nfp23DSwNFzaLJQhyHFnhkYLtvedncgCBCAmTF0
+
+
+###
+POST http://localhost:6262/api/v1/accounting/ledger
+Cookie: {{userCookie}}
+Content-Type: application/json
+
+{
+  "month": "2020/05"
+}
+
+###
+PUT http://localhost:6262/api/v1/accounting/ledger
+Cookie: {{userCookie}}
+Content-Type: application/json
+
+{
+  "date": "2020/05/01",
+  "saleAmount": 210,
+  "withdrawAmount": 120,
+  "loanAmount": 310,
+  "profitAmount": 120,
+  "totalAmount": 50
+}
+
+
+###
+DELETE http://localhost:6262/api/v1/accounting/ledger
+Cookie: {{userCookie}}
+Content-Type: application/json
+
+{
+  "date": "2020/05/01"
+}
+
+
+
+###
+POST http://localhost:6262/api/v1/accounting/debitcredit
+Cookie: {{userCookie}}
+Content-Type: application/json
+
+{
+  "accountType": ["debit", "credit"]
+}
+
+
+###
+PUT http://localhost:6262/api/v1/accounting/debitcredit
+Cookie: {{userCookie}}
+Content-Type: application/json
+
+{
+  "accountType":"debit",
+  "date": "2020/05/01",
+  "partyName": "Ram",
+  "items": [
+    {"item": "rice", "qty": 12, "rate": 1500},
+    {"item": "milk", "qty": 5, "rate": 50}
+  ],
+  "total": 15200,
+  "notes": "any detail"
+}
+
+
+###
+DELETE http://localhost:6262/api/v1/accounting/debitcredit
+Cookie: {{userCookie}}
+Content-Type: application/json
+
+{
+  "date": "2020/05/01",
+  "accountType": "credit"
+}

@@ -1,0 +1,6 @@
+POST http://localhost:6262/api/v1/search
+Content-Type: application/json
+
+{
+  "query": "basmati"
+}

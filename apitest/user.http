@@ -1,0 +1,12 @@
+@adminCookie = MahaanExpress=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZThhZjZhNTc0YjQ1ZTdkMjQ3Y2U0N2EiLCJ1c2VyVHlwZSI6ImFkbWluIiwiaWF0IjoxNTg2ODAzMDEzLCJleHAiOjE1ODkzOTUwMTN9.W1X3Fu_5CJ96laikaVrRVjHxesW0gi1m9V7ajTScoks
+@userCookie = MahaanExpress=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZTkyYzZlM2RkODNmYTA1NzQ3Y2Q4ZTQiLCJ1c2VybmFtZSI6Im9ta2Fyc3RoYSIsInVzZXJUeXBlIjoidXNlciIsImlhdCI6MTU4NjkwMTM1NiwiZXhwIjoxNTg5NDkzMzU2fQ.piP7nfp23DSwNFzaLJQhyHFnhkYLtvedncgCBCAmTF0
+
+
+###
+PATCH http://localhost:6262/api/v1/users/details
+Cookie: {{userCookie}}
+Content-Type: application/json
+
+{
+  "phone": "988890"
+}

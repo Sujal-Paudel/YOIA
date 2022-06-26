@@ -1,0 +1,19 @@
+{
+  "name": "readyall",
+  "version": "1.0.0",
+  "description": "Setup your work space instantly so that you don't have to do repetitive task while starting to work on a project",
+  "main": "readyall.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ready": "readyall.js"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "workspace",
+    "setup"
+  ],
+  "author": "Omkar Shrestha",
+  "license": "ISC"
+}

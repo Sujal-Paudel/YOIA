@@ -1,0 +1,30 @@
+@import "./global.scss";
+
+html {
+  font-family: "roboto";
+  // font-size: 62.5%;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 140rem;
+  padding: 0 5rem;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 768px) {
+    padding: 0rem;
+    margin: 0 auto;
+  }
+}

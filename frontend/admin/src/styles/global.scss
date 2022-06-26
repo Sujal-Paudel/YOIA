@@ -1,0 +1,159 @@
+@import "./variables.scss";
+
+.hidden {
+  display: none;
+}
+
+._title {
+  font-size: 2rem;
+}
+
+._displayPane {
+  flex-wrap: wrap;
+  flex-direction: row !important;
+  justify-content: center !important;
+  border: 1px solid #707070;
+  min-height: 100vh;
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 0.8rem;
+
+  &_title {
+    font-weight: 100;
+    font-size: 1.8rem;
+  }
+}
+
+._displaySelector {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid #111;
+  border-radius: 0.8rem 0.8rem 0 0;
+
+  &_option {
+    padding: 1rem;
+    width: 18rem;
+
+    &:not(:last-child) {
+      border-right: 1px solid #111;
+    }
+    &-active {
+      background: #111;
+      color: #fff;
+    }
+    &:hover {
+      cursor: pointer;
+      background: #111;
+      color: #fff;
+    }
+  }
+}
+
+._button {
+  &_round {
+    font-family: inherit;
+    align-self: flex-end;
+    padding: 1rem 3rem 1rem 1rem;
+    background-color: #ffffff;
+    border: 1px solid #111111;
+    border-radius: 1rem;
+    margin-right: 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    cursor: pointer;
+
+    &:focus {
+      outline: 0;
+    }
+    &:hover {
+      background: #222;
+      color: #fff;
+      box-shadow: $BASE_BOX-SHADOW;
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  &_delete {
+    text-decoration: underline;
+    border: none;
+    background: #fff;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+._input {
+  width: 100%;
+  font-family: inherit;
+  margin: 0.5rem 0;
+  padding: 0 0.75rem;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  font-weight: lighter;
+  border-bottom: 1px solid #707070;
+
+  &-red {
+    border-bottom: 1px solid red !important;
+  }
+  &::placeholder {
+    color: #bbb;
+  }
+}
+
+._select {
+  width: 100%;
+  height: 3rem;
+  border: 6px solid #777;
+  border-color: #fff transparent transparent transparent;
+}
+
+._container {
+  &_title {
+    font-weight: 400;
+  }
+
+  &_wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 0 2rem 0 5rem;
+
+    > div {
+      margin: 0.5rem 0;
+    }
+  }
+
+  &_roundBox {
+    border-radius: 2rem;
+    border: 1px solid #707070;
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    position: relative;
+  }
+}
+
+._card {
+  position: relative;
+  padding: 2rem;
+  margin: 1rem 0;
+  border: 1px solid #707070;
+  text-align: left;
+  border-radius: 2rem;
+
+  &_selected {
+    background: #f8f8f8;
+  }
+  &:hover {
+    cursor: pointer;
+    box-shadow: $BASE_BOX-SHADOW;
+  }
+}
