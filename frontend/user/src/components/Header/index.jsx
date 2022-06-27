@@ -124,7 +124,7 @@ function Navbar(props) {
   const Search = () => (
     <div className={classes.search}>
       <InputBase
-        placeholder="Search MahaanExpress"
+        placeholder="Search yoia"
         classes={{
           root: classes.inputRoot,
           input: classes.inputInput,

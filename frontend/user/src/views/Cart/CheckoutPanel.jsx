@@ -130,7 +130,7 @@ function CheckoutPanel() {
       <Grid item md={12} style={{ flexGrow: 1 }} />
       <Grid item md={12} className={classes.shippingBottom}>
         <Typography variant="subtitle1">
-          Or checkout via MahaanExpress Account
+          Or checkout via yoia Account
         </Typography>
         <br />
         <div>

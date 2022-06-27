@@ -4,7 +4,7 @@ import "./index.scss";
 const Header = (props) => {
   return (
     <div className="header">
-      {/* <p className="header__title">MahaanExpress-Admin</p> */}
+      {/* <p className="header__title">yoia-Admin</p> */}
     </div>
   );
 };

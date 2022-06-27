@@ -8,7 +8,7 @@ function DocumentTitle() {
 
   useEffect(() => {
     const name = routes.find((e) => e.path === pathname)?.name;
-    document.title = name ? `MahaanExpress | ${name}` : "MahaanExpress";
+    document.title = name ? `yoia | ${name}` : "yoia";
   }, [pathname]);
 }
 

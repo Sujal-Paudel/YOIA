@@ -24,7 +24,7 @@ function AddToHomeScreen() {
         <div className="addToHomeScreen">
           <p></p>
           <button className="addToHomeScreen_add" onClick={promptToInstall}>
-            Add MahaanExpress to homescreen
+            Add yoia to homescreen
           </button>
           <button
             className="addToHomeScreen_close"

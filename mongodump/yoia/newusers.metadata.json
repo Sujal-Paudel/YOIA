@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"yoia.newusers"},{"v":2,"key":{"createdAt":1},"name":"createdAt_1","ns":"yoia.newusers","expireAfterSeconds":null,"background":true}],"uuid":"77be56478dc449ca834088ee0e094a87"}
